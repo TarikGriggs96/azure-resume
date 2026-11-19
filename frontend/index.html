@@ -1,277 +1,373 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title> Tarik's Resume</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- Script
-   ================================================== -->
-   <script src="js/modernizr.js"></script>
-   <script src="main.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tarik Griggs | Senior Cloud Support Engineer</title>
+<meta name="description" content="Tarik Griggs, Senior Cloud Support Engineer in Tampa, FL. Microsoft Azure, Azure Virtual Desktop, hosted private cloud, escalation leadership.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // Apply the saved mode before the page paints, so light-mode visitors don't see a dark flash.
+  try { if (localStorage.getItem("mode") === "light") document.documentElement.setAttribute("data-mode", "light"); } catch (e) {}
+</script>
 </head>
-
 <body>
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">TG</span>
+      <span class="brand-name">Tarik Griggs<small>Senior Cloud Support Engineer</small></span>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#project">Project</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="mode-btn" id="mode-btn" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a class="nav-cta" href="#contact">Get in touch</a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    </div>
+  </div>
+</nav>
 
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">Hi, I'm Tarik</h1>
-            
-            <p>and this page has been viewed <a id="counter"></a> times :) </p> 
-            <ul class="social">
-               <li><a href="https://twitter.com/madebygps"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://madebygps.com"><i class="fa fa-external-link"></i></a></li>
-               <li><a href="https://linkedin.com/in/gwyneth-pena"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://instagram.com/madebygps"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://youtube.com/madebygps"><i class="fa fa-youtube"></i></a></li>
-               <li><a href="https://github.com/madebygps/cgc-azure-resume"><i class="fa fa-github"></i></a></li>
-            </ul>
-         </div>
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Open to cloud engineering roles</span>
+      <h1>Hi, I'm <span class="name">Tarik Griggs</span></h1>
+      <p class="role"><b>Senior Cloud Support Engineer</b> · Microsoft Azure &amp; Hosted Cloud · Tampa, FL</p>
+      <p class="lede">I lead a team of L3 engineers through the hardest escalations in Azure and private-cloud environments, find the root cause, and write the runbooks that keep the same problem from coming back.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#experience">View my experience <span aria-hidden="true">→</span></a>
+        <!-- Put a PDF of your resume next to index.html named resume.pdf -->
+        <a class="btn" href="Tarik_Griggs_Senior_Cloud_Support_Resume_2026.pdf" target="_blank" rel="noopener">Download resume <span aria-hidden="true">↓</span></a>
       </div>
-
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-
-      <div class="row">
-
-         <div class="three columns">
-
-            <img class="profile-pic"  src="images/me.png" alt="" />
-
-         </div>
-
-         <div class="nine columns main-col">
-
-            <h2>ABOUT ME</h2>
-
-            <p> Hi, I'm Tarik Griggs Jr, <span>Aspiring DevOps Engineer at <a href="https://www.thecloudatwork.com/">Cloud At Work </a></span>, <span> <a href="https://mvp.microsoft.com/en-us/PublicProfile/5003866">Azure MVP</a></span>
-               and focused on improving my DevOps and Cloud Skills. 
-               
-         </br>
-      </br>
-       I built this page as part of the <span><a href="https://github.com/madebygps/cgc-azure-resume">Cloud Guru Azure Resume Challenge.</a></span>
-            
-
-         </div> <!-- end .main-col -->
-
+      <div class="stats">
+        <div class="stat"><b>7+</b><span>Years in cloud &amp; IT</span></div>
+        <div class="stat"><b>4</b><span>L3 engineers led</span></div>
+        <div class="stat"><b>3</b><span>Microsoft Azure certifications</span></div>
+        <div class="stat"><b>1</b><span>CompTIA Security+</span></div>
       </div>
+    </div>
 
-   </section> <!-- About Section End-->
+    <div class="terminal" role="img" aria-label="Terminal showing a profile summary in Azure CLI style">
+      <div class="terminal-bar"><i></i><i></i><i></i><span>bash · az cli</span><span class="live">Running</span></div>
+<pre><span class="t-prompt">$</span> az engineer show --name tarik-griggs
+{
+  <span class="t-key">"role"</span>: <span class="t-str">"Senior Cloud Support Engineer"</span>,
+  <span class="t-key">"location"</span>: <span class="t-str">"tampa-fl"</span>,
+  <span class="t-key">"provisioningState"</span>: <span class="t-str">"Succeeded"</span>,
+  <span class="t-key">"experienceYears"</span>: <span class="t-num">7</span>,
+  <span class="t-key">"leads"</span>: <span class="t-str">"4 x L3 engineers"</span>,
+  <span class="t-key">"targetRoles"</span>: [
+    <span class="t-str">"DevOps Engineer"</span>, <span class="t-str">"Cloud Engineer"</span>,
+    <span class="t-str">"Platform Engineer"</span>
+  ],
+  <span class="t-key">"focus"</span>: [
+    <span class="t-str">"Azure infrastructure"</span>, <span class="t-str">"Infrastructure as Code"</span>,
+    <span class="t-str">"CI/CD"</span>, <span class="t-str">"Automation"</span>, <span class="t-str">"Reliability & RCA"</span>
+  ],
+  <span class="t-key">"certifications"</span>: [
+    <span class="t-str">"AZ-104"</span>, <span class="t-str">"AZ-700"</span>, <span class="t-str">"AZ-140"</span>, <span class="t-str">"Security+"</span>
+  ],
+  <span class="t-key">"tags"</span>: { <span class="t-key">"openToWork"</span>: <span class="t-str">"true"</span> }
+}
+<span class="t-prompt">$</span> <span class="cursor"></span></pre>
+    </div>
+  </div>
+</header>
 
+<div class="views" aria-live="polite">
+  <div class="wrap">
+    <div class="views-main">
+      <span class="views-live">Live</span>
+      <p>This page has been viewed <b class="visitor-count">—</b> times</p>
+    </div>
+    <p class="views-how">Counted by <span>Azure Functions</span> + <span>Cosmos DB</span> · <a href="#project">see how</a></p>
+  </div>
+</div>
 
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Certifications</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Azure Administrator Associate</h3>
-                  <p class="info"><em class="date">November 2023</em></p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Azure Network Engineer Associate</h3>
-                  <p class="info"><em class="date">October 2024</em></p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>A.S. in Computer Science, </h3>
-                  <p class="info"><em class="date">July 2019</em></p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Cloud Support Engineer</h3>
-                  <p class="info">Support and assist building cloud environments<span>&bull;</span> <em class="date">March 2024 - Present</em></p>
-
-                  <p>
-                  <li>Assisted clients with Troubling Cloud Servers hosting in VPC or Microsoft Azure</li> 
-                  <li>Setting up Client or Site to Site VPN for various clients</li>
-                  <li>Configured and built Azure environments (including AVD) and Virtual Machines, troubleshooting Azure-related issues</li>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>CommTech Technology Industries</h3>
-                  <p class="info">System Administrator <span>&bull;</span> <em class="date">July 2022 - March 2024</em></p>
-
-                  <p>
-                     <li>Assisted clients with network connectivity, server management, shared software, 365, VMware, and other applications.</li>
-                     <li>Conducted general troubleshooting to diagnose common network and systems issues</li>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>iMerit Technology</h3>
-                  <p class="info"> Jr. System Administrator <span>&bull;</span> <em class="date">October 2021 - July 2022</em></p>
-
-                  <p>
-                  <li>Configured, maintained, upgraded, and managed various network devices and IT systems, including Linux, Mac, and Windows-based systems</li>
-                  <li>Configured and maintained VMware host machines</li>
-                  <li>Developed user training manuals, updated FAQs, and provided help sheets with step-by-step instructions.</li>
-                  <li>AWS infrastructure administration</li>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      
-
-   </section> <!-- Resume Section End-->
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li><a href="https://twitter.com/madebygps"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="https://linkedin.com/in/gwyneth-pena"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://madebygps.com"><i class="fa fa-external-link"></i></a></li>
-               <li><a href="https://instagram.com/madebygps"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://youtube.com/madebygps"><i class="fa fa-youtube"></i></a></li>
-               <li><a href="https://github.com/madebygps/cgc-azure-resume"><i class="fa fa-github"></i></a></li>
-            </ul>
-
-            <ul class="copyright">
-               <a href="https://www.styleshout.com/free-templates/ceevee/"> Template by CeeVee </a>
-                
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
+<main>
+  <section class="band" id="about">
+    <div class="wrap">
+      <div class="band-head">
+        <div><span class="eyebrow">About me</span><h2>The engineer teams call when it's on fire</h2></div>
       </div>
+      <div class="about-grid">
+        <div class="copy">
+          <p>I'm a <strong>Senior Cloud Support Engineer at Cloud at Work</strong>, where I'm the subject matter expert and escalation owner for hosted private-cloud and Microsoft Azure environments. I own high-impact incidents from first alert through resolution and the follow-up that comes after.</p>
+          <p>Over 7+ years across cloud infrastructure, Azure, Microsoft 365, and systems administration, I've learned that fixing the ticket is only half the job. I look for the <strong>trend behind the tickets</strong>, drive the fix that stops repeats, and explain the root cause to clients in plain language.</p>
+          <p>I also lead a team of four L3 engineers: coaching them on complex cases, planning workload and priorities, and building the runbooks and training that help new engineers get up to speed.</p>
+        </div>
+        <div class="facts">
+          <div class="fact"><span>Current role</span><b>Senior Cloud Support Engineer</b></div>
+          <div class="fact"><span>Company</span><b>Cloud at Work (Remote)</b></div>
+          <div class="fact"><span>Based in</span><b>Tampa, Florida</b></div>
+          <div class="fact"><span>Education</span><b>A.S. Computer Science, St. Petersburg College</b></div>
+          <div class="fact"><span>Certifications</span><b>AZ-104 · AZ-700 · AZ-140 · Security+</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-   </footer> <!-- Footer End-->
+  <section class="band" id="expertise">
+    <div class="wrap">
+      <div class="band-head">
+        <div><span class="eyebrow">What I do</span><h2>Core expertise</h2></div>
+        <p>Where I spend my time, and where teams lean on me most.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 18 9.5a4 4 0 0 1-.5 8.5H7z"/></svg></div>
+          <h3>Azure &amp; hosted cloud</h3>
+          <p>Building and troubleshooting Azure environments, Azure Virtual Desktop, VMs, and private-cloud (VPC) servers, including site-to-site and client VPNs.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></div>
+          <h3>Escalation ownership</h3>
+          <p>Owning high-impact incidents end to end and setting clear expectations with clients on resolution path, risk, and timeline.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v3l2 2"/></svg></div>
+          <h3>Root cause analysis</h3>
+          <p>Spotting trends in tickets and defects, leading post-incident reviews, and driving corrective actions that cut repeat incidents.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M21.5 20a6.5 6.5 0 0 0-4-6"/></svg></div>
+          <h3>Team leadership</h3>
+          <p>Leading four L3 engineers, writing advanced runbooks and knowledge base content, and training new support engineers.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+  <section class="band" id="experience">
+    <div class="wrap">
+      <div class="band-head">
+        <div><span class="eyebrow">Career</span><h2>Experience</h2></div>
+        <p>From hands-on support technician to senior escalation lead.</p>
+      </div>
+      <ol class="timeline">
+        <li class="role">
+          <div class="role-when">Jan 2026 – Present<br><span class="now">Current</span></div>
+          <div>
+            <h3>Senior Cloud Support Engineer</h3>
+            <p class="org">Cloud at Work · Remote</p>
+            <ul>
+              <li>Lead a team of four L3 engineers: coach them on complex cases, plan workload and priorities, and guide the team to solutions for difficult problems.</li>
+              <li>Subject matter expert and escalation owner for hosted cloud (private VPC) and Microsoft Azure environments, owning high-impact incidents end to end.</li>
+              <li>Lead root cause analysis on recurring and systemic issues, spotting trends in tickets and defects and driving fixes that reduce repeat incidents.</li>
+              <li>Partner with Product, Engineering, Professional Services, and Client Experience on escalations, post-incident reviews, and corrective action plans.</li>
+              <li>Write advanced runbooks and knowledge base content, deliver internal training, and propose process, tooling, and automation improvements.</li>
+            </ul>
+            <div class="tags"><span class="tag">Azure</span><span class="tag">Private cloud</span><span class="tag">Incident management</span><span class="tag">RCA</span><span class="tag">Leadership</span></div>
+          </div>
+        </li>
+        <li class="role">
+          <div class="role-when">Mar 2024 – Dec 2025</div>
+          <div>
+            <h3>Cloud Support Engineer</h3>
+            <p class="org">Cloud at Work · Remote</p>
+            <ul>
+              <li>Troubleshot and supported client servers hosted in a private cloud (VPC) and Microsoft Azure.</li>
+              <li>Built Azure environments, including Azure Virtual Desktop (AVD) and virtual machines, and resolved Azure-related issues.</li>
+              <li>Configured client-to-site and site-to-site VPNs for client environments.</li>
+              <li>Upgraded and maintained cloud server resources to meet client performance needs, and wrote troubleshooting documentation to speed up future fixes.</li>
+            </ul>
+            <div class="tags"><span class="tag">AVD</span><span class="tag">Azure VMs</span><span class="tag">VPN</span><span class="tag">Windows Server</span></div>
+          </div>
+        </li>
+        <li class="role">
+          <div class="role-when">Jul 2022 – Mar 2024</div>
+          <div>
+            <h3>System Administrator</h3>
+            <p class="org">CommTech Technology Industries · New Orleans</p>
+            <ul>
+              <li>Supported clients with network connectivity, server management, Microsoft 365, VMware, and line-of-business applications.</li>
+              <li>Managed system administration and user accounts across multiple client environments.</li>
+              <li>Configured and built Azure environments and virtual machines, and troubleshot Azure-related issues.</li>
+              <li>Triaged workstation, server, phone system, and ISP issues, escalating when needed.</li>
+            </ul>
+            <div class="tags"><span class="tag">Microsoft 365</span><span class="tag">VMware</span><span class="tag">Networking</span><span class="tag">Azure</span></div>
+          </div>
+        </li>
+        <li class="role">
+          <div class="role-when">Oct 2021 – Jul 2022</div>
+          <div>
+            <h3>Jr. System Administrator / Support Technician</h3>
+            <p class="org">iMerit Technology · New Orleans</p>
+            <ul>
+              <li>Configured and managed network devices and Linux, Mac, and Windows systems.</li>
+              <li>Managed anti-virus policies through Bitdefender and ran asset audits with Ivanti and LANDesk.</li>
+              <li>Configured and maintained VMware hosts, and wrote training manuals, FAQs, and step-by-step help sheets.</li>
+            </ul>
+            <div class="tags"><span class="tag">VMware</span><span class="tag">Bitdefender</span><span class="tag">Ivanti</span><span class="tag">Linux / Mac / Windows</span></div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+  <section class="band" id="skills">
+    <div class="wrap">
+      <div class="band-head">
+        <div><span class="eyebrow">Toolkit</span><h2>Skills</h2></div>
+      </div>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Cloud &amp; infrastructure</h3>
+          <ul><li>Microsoft Azure</li><li>Azure Virtual Desktop</li><li>Windows Server &amp; RDS</li><li>Hosted private cloud (VPC)</li><li>VMware</li><li>Networking &amp; VPN</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Identity, M365 &amp; tooling</h3>
+          <ul><li>Active Directory / GPO</li><li>Microsoft 365</li><li>ConnectWise</li><li>IT Glue</li><li>Scripting &amp; automation</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Leadership &amp; process</h3>
+          <ul><li>Team leadership &amp; coaching</li><li>Escalation management</li><li>Root cause analysis</li><li>Post-incident reviews</li><li>Runbooks &amp; knowledge base</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="band" id="certifications">
+    <div class="wrap">
+      <div class="band-head">
+        <div><span class="eyebrow">Verified</span><h2>Certifications</h2></div>
+        <!-- Optional: link each card to its Credly or Microsoft Learn credential page -->
+      </div>
+      <div class="certs">
+        <article class="cert"><span class="code">AZ-104</span><h3>Azure Administrator Associate</h3><p>Microsoft Certified</p></article>
+        <article class="cert"><span class="code">AZ-700</span><h3>Azure Network Engineer Associate</h3><p>Microsoft Certified</p></article>
+        <article class="cert"><span class="code">AZ-140</span><h3>Azure Virtual Desktop Specialty</h3><p>Microsoft Certified</p></article>
+        <article class="cert sec"><span class="code">SEC+</span><h3>CompTIA Security+</h3><p>CompTIA</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="project">
+    <div class="wrap">
+      <div class="band-head">
+        <div><span class="eyebrow">Featured project</span><h2>This website</h2></div>
+      </div>
+      <div class="project">
+        <div class="copy">
+          <span class="status">In progress · Cloud Resume Challenge</span>
+          <h3>A serverless resume on Azure</h3>
+          <p>This site is my take on the Cloud Resume Challenge. It's served as a static website from Azure Storage, and a visitor counter at the bottom of the page calls an Azure Functions API that reads and updates a count in Cosmos DB.</p>
+          <p>The infrastructure is defined as code with Bicep and deployed by GitHub Actions, so every change goes through source control and a pipeline instead of the Portal.</p>
+          <div class="tags"><span class="tag">Azure Storage</span><span class="tag">Azure Functions</span><span class="tag">Cosmos DB</span><span class="tag">Bicep</span><span class="tag">GitHub Actions</span></div>
+        </div>
+        <div class="diagram" role="img" aria-label="Architecture: a visitor's browser loads the site through HTTPS from Azure Storage, and JavaScript calls an Azure Function that updates Cosmos DB. GitHub Actions deploys both using Bicep.">
+          <svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg">
+            <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" fill="#94a0b4"/></marker></defs>
+            <rect class="box" x="10" y="40" width="120" height="56" rx="10"/>
+            <text x="70" y="64" text-anchor="middle">Visitor</text><text class="sub" x="70" y="82" text-anchor="middle">browser</text>
+            <rect class="box" x="220" y="40" width="130" height="56" rx="10"/>
+            <text x="285" y="64" text-anchor="middle">HTTPS + DNS</text><text class="sub" x="285" y="82" text-anchor="middle">custom domain</text>
+            <rect class="box-hl" x="430" y="40" width="120" height="56" rx="10"/>
+            <text x="490" y="64" text-anchor="middle">Storage</text><text class="sub" x="490" y="82" text-anchor="middle">static website</text>
+            <rect class="box-hl" x="220" y="150" width="130" height="56" rx="10"/>
+            <text x="285" y="174" text-anchor="middle">Azure Functions</text><text class="sub" x="285" y="192" text-anchor="middle">visitor API</text>
+            <rect class="box-hl" x="430" y="150" width="120" height="56" rx="10"/>
+            <text x="490" y="174" text-anchor="middle">Cosmos DB</text><text class="sub" x="490" y="192" text-anchor="middle">count</text>
+            <rect class="box" x="10" y="232" width="200" height="56" rx="10"/>
+            <text x="110" y="256" text-anchor="middle">GitHub Actions</text><text class="sub" x="110" y="274" text-anchor="middle">CI/CD + Bicep</text>
+            <path class="wire" d="M130 68H216" marker-end="url(#arr)"/>
+            <path class="wire" d="M350 68H426" marker-end="url(#arr)"/>
+            <path class="wire" d="M70 96V178H216" marker-end="url(#arr)"/>
+            <text class="sub" x="78" y="140">fetch()</text>
+            <path class="wire" d="M350 178H426" marker-end="url(#arr)"/>
+            <path class="wire wire-ci" d="M210 260H490V210"/>
+            <path class="wire wire-ci" d="M210 260H285V210"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="contact">
+    <div class="wrap contact">
+      <div>
+        <span class="eyebrow">Let's talk</span>
+        <h2>Hiring for a cloud role?</h2>
+        <p class="lede">I'm interested in cloud engineering, Azure infrastructure, and DevOps roles. Email is the fastest way to reach me.</p>
+      </div>
+      <div class="channels">
+        <div class="channel">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <div><span>Email</span><a class="value" id="email" href="mailto:TarikGriggs96@gmail.com">TarikGriggs96@gmail.com</a></div>
+          <button class="copy-btn" id="copy-email" type="button">Copy</button>
+        </div>
+        <div class="channel">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.5h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4z"/></svg></span>
+          <div><span>LinkedIn</span><a class="value" href="https://www.linkedin.com/in/tarikgriggs" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
+        </div>
+        <div class="channel">
+          <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+          <div><span>Location</span><b>Tampa, Florida · Open to remote</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Tarik Griggs · Hosted on Microsoft Azure</span>
+    <span class="counter">Visitors: <b class="visitor-count">—</b></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Dark / light toggle. Dark (Ember) is the default; the choice is remembered in this browser.
+  const modeBtn = document.getElementById("mode-btn");
+  function setMode(light) {
+    if (light) document.documentElement.setAttribute("data-mode", "light");
+    else document.documentElement.removeAttribute("data-mode");
+    const label = light ? "Switch to dark mode" : "Switch to light mode";
+    modeBtn.setAttribute("aria-label", label);
+    modeBtn.title = label;
+    try { localStorage.setItem("mode", light ? "light" : "dark"); } catch (e) {}
+  }
+  setMode(document.documentElement.getAttribute("data-mode") === "light");
+  modeBtn.addEventListener("click", () => setMode(document.documentElement.getAttribute("data-mode") !== "light"));
+
+  const menuBtn = document.getElementById("menu-btn");
+  const navLinks = document.getElementById("nav-links");
+  menuBtn.addEventListener("click", () => {
+    const open = navLinks.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", String(open));
+  });
+  navLinks.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") { navLinks.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); }
+  });
+
+  const copyBtn = document.getElementById("copy-email");
+  copyBtn.addEventListener("click", () => {
+    const email = document.getElementById("email").textContent;
+    const done = () => { copyBtn.textContent = "Copied"; setTimeout(() => (copyBtn.textContent = "Copy"), 1800); };
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(email).then(done).catch(() => window.getSelection().selectAllChildren(document.getElementById("email")));
+    } else {
+      window.getSelection().selectAllChildren(document.getElementById("email"));
+    }
+  });
+</script>
+<script src="main.js"></script>
 </body>
-
 </html>
